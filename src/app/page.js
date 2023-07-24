@@ -68,6 +68,7 @@ export default function RandomUserPage() {
         !isLoading &&
         users.map((p) => (
           <UserCard
+            key={p.email}
             name={p.name}
             imgUrl={p.imgUrl}
             address={p.address}
